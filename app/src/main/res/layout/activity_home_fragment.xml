@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:id="@+id/bn_add_bday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="136dp"
+        android:text="Add Birthday" />
+
+    <Button
+        android:id="@+id/view_birthday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="336dp"
+        android:text="View Birthdays" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="486dp"
+        android:layout_height="113dp"
+        android:paddingLeft="30px"
+        android:paddingTop="130px"
+        android:text="Add a New Birthday to DataBase"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="550px"
+        android:text="Get Sorted Birthdays from young to old"
+        android:textSize="20sp" />
+
+</FrameLayout>

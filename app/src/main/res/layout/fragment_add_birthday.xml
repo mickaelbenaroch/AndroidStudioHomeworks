@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddBirthdayFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100px"
+        android:layout_marginTop="850px"
+        android:text="Add Birthday"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/labelAddBday"
+        android:layout_width="430dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:paddingLeft="90px"
+        android:text="Add New Birthday"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/labelName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200px"
+        android:layout_marginTop="150px"
+        android:text="Full Name"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/labelDate"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="550px"
+        android:text="Birth Date (dd/mm/yyyy)"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/enterDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130px"
+        android:layout_marginTop="700px"
+        android:ems="10"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/enterName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150px"
+        android:layout_marginTop="300px"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+</FrameLayout>
