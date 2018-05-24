@@ -19,7 +19,11 @@
         <activity android:name=".Calculator" />
         <activity android:name=".Birthdays" />
         <activity android:name=".HomeFragment" />
-        <activity android:name=".ReadBirthdayActivity2"></activity>
+        <activity android:name=".ReadBirthdayActivity2" />
+        <activity
+            android:name=".Animation"
+            android:label="@string/title_activity_animation"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Calendar;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Date;
@@ -31,13 +32,26 @@ public class ReadBirthdayActivity2 extends AppCompatActivity  {
         List<Birthday> births = Birthdays.myDataBase.mydao().getBirthdays();
 
         //Sorts Dates that came from database in descending
+        //Log.d("DATE", String.valueOf(Calendar.getInstance().getTime().getDate()));
+        //Log.d("DATE", String.valueOf(Calendar.getInstance().getTime().getMonth()));
 
         Collections.sort(births, new Comparator<Birthday>() {
             @Override
             public int compare(Birthday o1, Birthday o2) {
-                return o1.getBirthdayDate().compareTo(o2.getBirthdayDate());
+                if(o1.getBirthdayDate().after(o2.getBirthdayDate())){
+                    return  -1;
+                }
+                else{
+                    return 1;
+                }
+                //return o1.getBirthdayDate().compareTo(o2.getBirthdayDate());
             }
         });
+
+//        for(int i=0; i<births.size(); i++){
+//            int day = births.get(i).getDate();
+//            int month = births.get(i).getMonth();
+//        }
         String[] errorSoon = new String[births.size()];
 
         String info = "";

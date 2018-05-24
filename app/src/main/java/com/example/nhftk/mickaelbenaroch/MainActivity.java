@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
          recyclerView = findViewById(R.id.programmingList);
          recyclerView.setLayoutManager(new LinearLayoutManager(this));
-         String[] items = {"Calculator", "Birthdays", "Item", "Item", "Item", "Item", "Item", "Item", "Item"};
+         String[] items = {"Calculator", "Birthdays", "Animation", "Item", "Item", "Item", "Item", "Item", "Item"};
          recyclerView.setAdapter(new ProgrammingAdapter(items));
 
 
@@ -28,15 +28,21 @@ public class MainActivity extends AppCompatActivity {
 
     public void openCalculator(View view){
 
-            if(view.findViewById(R.id.textTitle).getTag().toString().equals("foo0")){
+        if(view.findViewById(R.id.textTitle).getTag().toString().equals("foo0")){
 
-                Intent startNewActivity = new Intent(this, Calculator.class);
-                startActivity(startNewActivity);
-            }
+            Intent startNewActivity = new Intent(this, Calculator.class);
+            startActivity(startNewActivity);
+        }
 
         if(view.findViewById(R.id.textTitle).getTag().toString().equals("foo1")){
 
             Intent startNewActivity = new Intent(this, Birthdays.class);
+            startActivity(startNewActivity);
+        }
+
+        if(view.findViewById(R.id.textTitle).getTag().toString().equals("foo2")){
+
+            Intent startNewActivity = new Intent(this, Animation.class);
             startActivity(startNewActivity);
         }
     }
